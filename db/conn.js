@@ -1,6 +1,6 @@
 const { connect } = require('mongoose')
 
-connect(process.env.MONGOURL).then(()=>{
+connect(process.env.MONGO_URL).then(()=>{
     console.log('Connecting...')
 }).catch((err)=>{
     console.log(err)
